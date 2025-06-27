@@ -94,18 +94,69 @@ background-color: gray;
 
 /*---main---*/
 .main-img{
-  display: flex;
-  
   height: 50%;
+  width: 100%;
   place-items: center;
+  display: flex;
+
 }
 .gas-plant-holder{
-  width: 70%;
+  width: 50%;
+  height: 100%;
 }
 
 .gas-plant{
   width: 100%;
+  height: 100%;
 }
+
+.intro-talk{
+  width: 50%;
+  padding-top: 40px;
+}
+
+.intro-talk h1{
+    margin-bottom: 15px;
+}
+
+.intro-talk p{
+
+  color: gray;
+}
+
+.hero-banner{
+  width: 200px;
+  border-radius: 150px;
+  background-color:  rgb(185, 221, 209);
+  margin-bottom: 45px;
+}
+
+.more-info{
+  display: grid;
+   grid-template-columns: repeat(2,1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 2px;
+  row-gap: 2px;
+  height: 100%;
+}
+
+.about-us{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 70%;
+  border-right: 1px solid black;
+  height: 100%;
+}
+
+.about-h2{
+  display: flex;
+  padding-left: 10px;
+}
+ .spacer{
+  width: 70%;
+  height: 1%;
+  background-color:black ;
+ }
 
 
 
@@ -138,30 +189,19 @@ background-color: gray;
   padding-top: 1em;
   padding-bottom: 0.5em;
   border-radius: 1em;
-  height: 95%;
+  height: 100%;
   
 }
-
-
-
-.song-list:hover{
-background-color: rgb(185, 221, 209);
-}
-
-.song-artist{
-  color:black;
-  margin: 0;
-  font-weight: 200;
-}
-
-
-
 
 .songImage{
  width: 70%;
  height: 50%;
  margin-bottom: 15px;
  
+}
+
+.menu-icon{
+  display: none;
 }
 
 .song-image{
@@ -177,15 +217,60 @@ background-color: rgb(185, 221, 209);
   grid-auto-rows: minmax(100px,auto);
   grid-gap: 5px;
   height: 100%;
-  background-color: aliceblue;
+  background-color: aliceblue !important ;
   
   padding-bottom: 40px;
 }
 
+.bpart{
+  place-items: center;
+}
 
 .section-list{
   place-items: center;
 }
+
+.what-we-do{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trusted-grid{
+   width: 100%;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: minmax(100px,auto);
+  grid-gap: 2px;
+  height: 100%;
+}
+.box{
+  place-items: center;
+  border-right: 1px solid black;
+}
+
+.but{
+  width: 30%;
+}
+
+.providing{
+  border-radius: 10px;
+  
+  padding: 5px;
+}
+
+.section-list h2{
+  margin-bottom: 30px;
+}
+
+.apart{
+  margin-bottom: 50px;
+}
+
+
 
 @media (max-width:468px){
  .header-links{
@@ -200,14 +285,29 @@ background-color: rgb(185, 221, 209);
   flex-direction: column;
   width: 100%;
  }
-
- .main-about h1{
+.hero-banner p{
   display: none;
- }
+}
+
+.menu-icon-open{
+  display: block;
+}
+
+.intro-talk{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+.gas-plant-holder{
+  width: 100%;
+} 
 
  .main-img{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
  }
 
  .song-tile{
@@ -234,6 +334,27 @@ background-color: rgb(185, 221, 209);
  .logo-holder{
 width: 38%;
 }
+.about-us{
+  width: 90%;
+  border: none;
+}
 
+.what-we-do{
+ flex-direction: column;
+ width: 100%; 
+ flex-wrap: wrap;
+ 
+}
 
+.trusted-grid{
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows: minmax(100px,auto);
+  border-top: 1px solid black;
+  border-right: none;
+}
+
+.more-info{
+  grid-template-columns: repeat(1,1fr);
+  grid-auto-rows: minmax(100px,auto);
+}
 }

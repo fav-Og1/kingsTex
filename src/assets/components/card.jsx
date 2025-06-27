@@ -18,7 +18,7 @@ const Card = () => {
           </div>
             
             <div className="song-title"><h4>{cards.title}</h4> </div>
-            <div className="song-artist"><h5>{cards.whatwedo}</h5> </div>
+            <div className="song-artist"><p>{cards.whatwedo}</p> </div>
       
       
            

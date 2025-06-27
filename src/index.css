@@ -83,6 +83,7 @@ button:focus-visible {
 .home-content > *{
   place-items: center;
   background-color: aliceblue;
+  padding: 1.5em;
 } 
 
 
@@ -93,28 +94,26 @@ header{
 background-color: black !important;  
 }
 
-nav{
-grid-column: 1/2;
-grid-row: 2/8;
-border-radius: 20px;
-margin-bottom: 10px;
-place-items: center;
-}
+
 
 
 
 main{
-  grid-column: 2/6;
+  grid-column: 1/6;
   grid-row: 2/5;
 }
+.library{
+  grid-column: 1/6;
+  grid-row: 5/7;
+}
 section{
-  grid-column: 2/6;
-  grid-row: 5/8;
+  grid-column: 1/6;
+  grid-row: 7/8;
 }
 footer{
   grid-column: 1/6;
   grid-row: 8;
-  background-color: black !important;
+  
 }
 
 @media (max-width:468px){
@@ -125,4 +124,18 @@ footer{
  section{
   grid-column: 1/6;
  }
+ 
+/*
+ nav{
+grid-column: 1/2;
+grid-row: 2/8;
+border-radius: 20px;
+margin-bottom: 10px;
+place-items: center;
+}
+*/
+
+.more-info{
+  flex-direction: column;
+}
 }
