@@ -1,8 +1,12 @@
 
 
-export default function HeaderLinks() {
+export default function HeaderLinks(props) {
+
+  const { show } = props
+
   return (
-    <div className="links-holder">
+    <>
+      <div className={ '' + (show ? 'links-holder' : 'links-holder-small')}>
       <div className="links-tab">
         <span> About Us</span>
       </div>
@@ -15,6 +19,10 @@ export default function HeaderLinks() {
       <div className="links-tab">
         <span> Get a quote</span>
       </div>
+       
     </div>
+    
+    </>
+    
   )
 }

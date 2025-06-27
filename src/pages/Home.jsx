@@ -7,6 +7,11 @@ import Main from "../assets/components/Main"
 import Library from "../assets/components/Library"
 
 export default function Home() {
+
+  
+                
+      
+
   return (
     
       <div className="home-content">

@@ -289,7 +289,7 @@ background-color: gray;
   display: none;
 }
 
-.menu-icon-open{
+.menu-icon{
   display: block;
 }
 
@@ -298,6 +298,12 @@ background-color: gray;
   margin-bottom: 20px;
 }
 
+.links-holder-small{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(185, 221, 209) ;
+  color: black;
+}
 
 .gas-plant-holder{
   width: 100%;
