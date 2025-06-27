@@ -1,4 +1,4 @@
-import kinglogo from '../img/kinglogo.png'
+import kinglogo from '../img/kingLogo.png'
 import HeaderLinks from './HeaderLinks'
 
 export default function Header() {
