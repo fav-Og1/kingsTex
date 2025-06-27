@@ -162,6 +162,7 @@ background-color: gray;
 
 
 .card-place{
+  place-items: center;
   width: 95%;
   padding-top: 1em;
   padding-bottom: 1em;
@@ -338,7 +339,7 @@ background-color: gray;
  }
 
  .logo-holder{
-width: 38%;
+width: 45%;
 }
 .about-us{
   width: 90%;
