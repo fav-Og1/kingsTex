@@ -9,7 +9,14 @@ export default function Main() {
         <p>Kingstex International Gas Company Limited is a leading producer of high-quality industrial and medical gases.
            <br />We provide Oxygen, Nitrogen, Liquid Oxygen, Liquid Nitrogen, Medical Gas, and Compressed Air.<br />
            Our commitment to safety and reliability makes us the preferred choice for various industries.</p>
-      
+
+        <div className="links-top">
+          <div className="div1"><button><p>Contact Us</p></button></div>
+            
+            <div className="div1 div2"><button><p>Our Services</p></button></div>
+            
+        </div>
+          
        
       </div>
 
