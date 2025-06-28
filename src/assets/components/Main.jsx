@@ -4,7 +4,11 @@ export default function Main() {
   return (
     <div className='main-about'>
       <div className="open-bmg">
-       <h1>Redefining <span style={{color:"black"}}>Gas Energy</span>   <br />Through expert solutions</h1>
+        <div className="shade-back"></div>
+       <h1>Redefining Gas Energy <br />Through Expert Solutions</h1>
+        <p>Kingstex International Gas Company Limited is a leading producer of high-quality industrial and medical gases.
+           <br />We provide Oxygen, Nitrogen, Liquid Oxygen, Liquid Nitrogen, Medical Gas, and Compressed Air.<br />
+           Our commitment to safety and reliability makes us the preferred choice for various industries.</p>
       
        
       </div>

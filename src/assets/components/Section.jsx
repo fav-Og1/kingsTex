@@ -4,7 +4,7 @@ export default function Section() {
   return (
     <div className='section-list'>
 <div className='apart'>
-  <h2>Your trusted gas solutions providers</h2>
+  <h2>Why People Trust Us</h2>
   <div className='trusted-grid'>
      <div className='box'>
       <div className='but'>
