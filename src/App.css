@@ -337,6 +337,11 @@ background-color: gray;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
+}
+
+.what-we-do h1{
+  line-height: 2em !important;
 }
 
 .trusted-grid{
@@ -363,6 +368,8 @@ background-color: gray;
   padding: 5px;
   margin-right: 0.4em;
   margin-left: 0.1em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
 }
 
 .section-list h2{
