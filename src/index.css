@@ -105,11 +105,12 @@ main{
   grid-column: 1/6;
   grid-row: 2/5;
   padding: 0 !important;
-  place-items: center;
+
 }
 .library{
   grid-column: 1/6;
   grid-row: 5/7;
+  
 }
 section{
   grid-column: 1/6;
@@ -140,7 +141,5 @@ place-items: center;
 }
 */
 
-.more-info{
-  flex-direction: column;
-}
+
 }
