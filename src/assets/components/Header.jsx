@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import HeaderLinks from './HeaderLinks'
 import kinglogo from '../img/kingLogo.png'
 
 
@@ -18,28 +19,12 @@ export default function Header() {
   return (
     <div className='header-components'>
       <div className='logo-holder'><img src={kinglogo} className='logo-img' /> </div>
+      <div className="menu-icon" onClick={onShowclick} > <i className="fa fa-bars"></i></div>
       <div className='header-links'>
-        
-       <div className={ '' + (show ? 'links-holder' : 'links-holder-small')}>
-      <div className="links-tab">
-        <span> About Us</span>
-      </div>
-      <div className="links-tab">
-        <span> Services</span>
-      </div>
-      <div className="links-tab">
-        <span> Contact</span>
-      </div>
-      <div className="links-tab">
-        <span> Get a quote</span>
-      </div>
        
-    </div>
-    
+    <HeaderLinks show={show} />
       </div>
-     <div className="menu-icon" > <i className="fa fa-bars"  onClick={ 
-      onShowclick
-     }></i></div>
+     
     </div>
   )
 }

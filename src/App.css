@@ -18,10 +18,36 @@
   justify-content: space-between;
   height: 100%;
   color: white;
+  flex-wrap: wrap;
 }
 
 .logo-holder{
 width: 20%;
+}
+
+.open-bmg{
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/29/13/06/beer-2551430_960_720.jpg');
+  background-size: contain;
+  background-repeat: repeat;
+  width: 100%;
+  height: 100%;
+  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+
+}
+
+
+.main-about{
+  
+  display: grid;
+  grid-template-rows:repeat(2,1fr) ;
+  row-gap: 20px;
+  width: 100%;
+  
 }
 
 .logo-img{
@@ -43,9 +69,7 @@ width: 100%;
   display: flex;
 }
 
-.main-about{
-  padding: 1em;
-}
+
 
 
 /*--- Nav bar ---*/
@@ -64,14 +88,16 @@ width: 100%;
 .nav-flex-title{
   display: flex;
   width: 90%;
-background-color: transparent;
+
 align-items: center;
 
+padding-left: 10pxpx;
  
 }
 
 .nav-flex-title:hover{
  cursor: pointer;
+ background-color:  rgb(185, 221, 209) !important;
  color: gray !important;
 }
 /*
@@ -94,20 +120,24 @@ background-color: gray;
 
 /*---main---*/
 .main-img{
-  height: 50%;
+  height: 100%;
   width: 100%;
   place-items: center;
   display: flex;
+  align-items: center;
 
 }
 .gas-plant-holder{
   width: 50%;
   height: 100%;
+  
 }
 
 .gas-plant{
   width: 100%;
   height: 100%;
+  border-radius: 5%;
+  
 }
 
 .intro-talk{
@@ -133,6 +163,13 @@ background-color: gray;
 
 .more-info{
   display: grid;
+   grid-template-rows: repeat(2,1fr);
+  grid-auto-rows: minmax(100px,auto);
+  padding-top: 4em;
+}
+
+.more-info-2{
+  display: grid;
    grid-template-columns: repeat(2,1fr);
   grid-auto-rows: minmax(100px,auto);
   grid-gap: 2px;
@@ -146,6 +183,29 @@ background-color: gray;
   width: 70%;
   border-right: 1px solid black;
   height: 100%;
+}
+
+.our-job {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: minmax(100px,auto);
+  color: white;
+}
+.our-job button{
+  margin-left: auto;
+  
+}
+
+
+
+.we-produce{
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/28/06/04/beer-2449887_1280.jpg');
+  background-size: contain;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .about-h2{
@@ -233,6 +293,8 @@ background-color: gray;
 
 .what-we-do{
   
+  
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,17 +331,24 @@ background-color: gray;
 
 .apart{
   margin-bottom: 50px;
+} 
+
+
+.service-main{
+  background-image: url('https://cdn.pixabay.com/photo/2019/11/19/14/08/tool-equipment-4637526_960_720.jpg');
 }
 
+.about-main{
+  background-image: url('https://cdn.pixabay.com/photo/2012/03/04/00/14/care-21822_1280.jpg');
+}
 
+.contact-main{
+  background-image: url('');
+}
 
 @media (max-width:468px){
- .header-links{
-  display: none;
- } 
- nav{
-  display: none;
- }
+ 
+
 
  .main-about{
   display: flex;
@@ -292,6 +361,7 @@ background-color: gray;
 
 .menu-icon{
   display: block;
+  margin-right: 40px;
 }
 
 .intro-talk{
@@ -299,11 +369,12 @@ background-color: gray;
   margin-bottom: 20px;
 }
 
-.links-holder-small{
-  display: flex;
-  flex-direction: column;
-  background-color:rgb(185, 221, 209) ;
-  color: black;
+
+
+
+
+.links-holder{
+  display: none;
 }
 
 .gas-plant-holder{
@@ -315,6 +386,37 @@ background-color: gray;
   flex-direction: column;
   width: 100%;
   margin-top: 40px;
+ }
+
+.links-holder-small{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+  
+width: 200%;
+padding-top: 10px;
+padding-bottom: 10px;
+  
+}
+
+ .links-tab{
+  padding-left: 10px;
+  
+  border-bottom: 1px solid gray;
+  
+  display: flex;
+  
+  align-items: center;
+
+ }
+
+ .links-tab:hover{
+  background-color: gray ;
+ }
+
+ .links-tab span{
+  margin-left: 20px;
  }
 
  .song-tile{
@@ -360,7 +462,7 @@ width: 45%;
   border-right: none;
 }
 
-.more-info{
+.more-info-2{
   grid-template-columns: repeat(1,1fr);
   grid-auto-rows: minmax(100px,auto);
 }

@@ -91,6 +91,7 @@ button:focus-visible {
 header{
   grid-column: 1/6;
   grid-row: 1;
+  padding: 0em  1.5em;
 background-color: black !important;  
 }
 
@@ -101,6 +102,8 @@ background-color: black !important;
 main{
   grid-column: 1/6;
   grid-row: 2/5;
+  padding: 0 !important;
+  place-items: center;
 }
 .library{
   grid-column: 1/6;

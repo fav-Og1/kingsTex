@@ -1,11 +1,14 @@
-import gasplant from '../img/gasplant.JPG'
+
 
 export default function Main() {
   return (
     <div className='main-about'>
-      <div>
+      <div className="open-bmg">
+       <h1>Redefining <span style={{color:"black"}}>Gas Energy</span>   <br />Through expert solutions</h1>
+      
        
       </div>
+
         <div className='main-img'>
           <div className='intro-talk'>
             <div className='hero-banner'><p>High quality gas <br />
@@ -21,7 +24,7 @@ In Kingstex International Gas Company Limited  <br />Our commitment to safety, i
 
           <div className='gas-plant-holder'>
             
-              <img src={gasplant}  className='gas-plant'/>
+              <img src="https://cdn.pixabay.com/photo/2013/11/25/17/26/beer-218148_960_720.jpg"  className='gas-plant'/>
             </div>
       </div>
 
